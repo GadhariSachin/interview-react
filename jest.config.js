@@ -1,7 +1,7 @@
 module.exports = {
 	testEnvironment: "jsdom",
 	setupFilesAfterEnv: ["<rootDir>/tests/setupTests.ts"],
-	testMatch: ["<rootDir>/tests/**/*.(spec|test).(ts|tsx)"],
+	testMatch: ["<rootDir>/tests/**/*.(spec|test).(ts|tsx)", "<rootDir>/**/**/*.(spec).(ts|tsx)"],
 	transform: {
 		"^.+\\.(js|jsx|ts|tsx)$": [
 			"@swc/jest",
